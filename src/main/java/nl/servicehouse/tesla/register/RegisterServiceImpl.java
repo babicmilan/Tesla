@@ -1,4 +1,4 @@
-package nl.servicehouse.billingengine.metering;
+package nl.servicehouse.tesla.register;
 
 import java.util.Optional;
 
@@ -9,8 +9,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import nl.servicehouse.billingengine.metering.domain.Register;
-import nl.servicehouse.billingengine.metering.dto.RegisterDto;
+import nl.servicehouse.tesla.meter.MeterRepository;
+import nl.servicehouse.tesla.register.web.RegisterDto;
 
 @Service
 @Transactional

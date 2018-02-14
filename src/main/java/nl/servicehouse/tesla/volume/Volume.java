@@ -10,6 +10,9 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import java.util.Objects;
 
+import nl.servicehouse.tesla.common.AbstractVersionedAuditable;
+import nl.servicehouse.tesla.register.Register;
+
 @Entity
 @Audited
 @Table(name = "metering_volume")

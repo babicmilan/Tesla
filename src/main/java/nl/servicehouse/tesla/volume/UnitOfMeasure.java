@@ -1,4 +1,4 @@
-package nl.servicehouse.billingengine.metering.domain;
+package nl.servicehouse.tesla.volume;
 
 public enum UnitOfMeasure {
     KWH, MTQ, M3N

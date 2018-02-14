@@ -1,6 +1,5 @@
-package nl.servicehouse.billingengine.metering;
+package nl.servicehouse.tesla.register;
 
-import nl.servicehouse.billingengine.metering.domain.Register;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

@@ -19,6 +19,8 @@ import org.springframework.data.jpa.domain.AbstractPersistable;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
+import nl.servicehouse.tesla.register.Register;
+
 @Entity(name = "teslaMeterReading")
 @Table(name = "metering_meterreading")
 public class MeterReading extends AbstractPersistable {

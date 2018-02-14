@@ -4,12 +4,6 @@ import javax.persistence.TransactionRequiredException;
 import javax.validation.Valid;
 
 import io.swagger.annotations.*;
-import nl.servicehouse.billingengine.metering.domain.Meter;
-import nl.servicehouse.billingengine.metering.domain.MeterReading;
-import nl.servicehouse.billingengine.metering.domain.Register;
-import nl.servicehouse.billingengine.metering.exception.DeleteEntityException;
-import nl.servicehouse.billingengine.metering.exception.PersistEntityException;
-import nl.servicehouse.billingengine.metering.exception.UpdateEntityException;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,10 +28,16 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import nl.servicehouse.billingengine.metering.dto.MeterReadingDto;
-import nl.servicehouse.billingengine.metering.exception.ResourceNotFoundException;
 import nl.servicehouse.tesla.common.MeteringConstants;
+import nl.servicehouse.tesla.exception.DeleteEntityException;
+import nl.servicehouse.tesla.exception.PersistEntityException;
+import nl.servicehouse.tesla.exception.ResourceNotFoundException;
+import nl.servicehouse.tesla.exception.UpdateEntityException;
 import nl.servicehouse.tesla.meter.web.MeterController;
+import nl.servicehouse.tesla.meterreading.MeterReading;
+import nl.servicehouse.tesla.meterreading.MeterReadingService;
+import nl.servicehouse.tesla.register.Register;
+import nl.servicehouse.tesla.register.RegisterService;
 
 import java.util.Optional;
 

@@ -1,15 +1,20 @@
-package nl.servicehouse.billingengine.metering;
+package nl.servicehouse.tesla.volume.web;
+
+import java.util.Optional;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
-import nl.servicehouse.billingengine.metering.domain.Register;
-import nl.servicehouse.billingengine.metering.domain.Volume;
-import nl.servicehouse.billingengine.metering.dto.VolumeDto;
-import nl.servicehouse.billingengine.metering.exception.DeleteEntityException;
-import nl.servicehouse.billingengine.metering.exception.ResourceNotFoundException;
+import nl.servicehouse.tesla.common.MeteringConstants;
+import nl.servicehouse.tesla.exception.DeleteEntityException;
+import nl.servicehouse.tesla.exception.ResourceNotFoundException;
+import nl.servicehouse.tesla.register.Register;
+import nl.servicehouse.tesla.register.RegisterService;
+import nl.servicehouse.tesla.volume.Volume;
+import nl.servicehouse.tesla.volume.VolumeService;
+
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.BeanUtils;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -34,13 +39,12 @@ import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import javax.validation.Valid;
-import java.util.Optional;
 
 @RestController
 @RequestMapping(path = MeteringConstants.METERING_BASE_PATH + "/volumes")
 @Api(value = "volume")
 public class VolumeController {
-    
+
     private final VolumeService volumeService;
 
     private final RegisterService registerService;

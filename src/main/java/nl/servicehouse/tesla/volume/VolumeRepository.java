@@ -1,6 +1,5 @@
-package nl.servicehouse.billingengine.metering;
+package nl.servicehouse.tesla.volume;
 
-import nl.servicehouse.billingengine.metering.domain.Volume;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
 public interface VolumeRepository extends PagingAndSortingRepository<Volume, Long> {

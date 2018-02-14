@@ -1,9 +1,9 @@
-package nl.servicehouse.billingengine.metering;
+package nl.servicehouse.tesla.register.web;
+
+import java.util.Optional;
 
 import javax.validation.Valid;
 
-import nl.servicehouse.billingengine.metering.domain.Meter;
-import nl.servicehouse.billingengine.metering.domain.Register;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.BeanUtils;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -32,11 +32,13 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
-import nl.servicehouse.billingengine.metering.dto.RegisterDto;
-import nl.servicehouse.billingengine.metering.exception.DeleteEntityException;
-import nl.servicehouse.billingengine.metering.exception.ResourceNotFoundException;
-
-import java.util.Optional;
+import nl.servicehouse.tesla.common.MeteringConstants;
+import nl.servicehouse.tesla.exception.DeleteEntityException;
+import nl.servicehouse.tesla.exception.ResourceNotFoundException;
+import nl.servicehouse.tesla.meter.Meter;
+import nl.servicehouse.tesla.meter.MeterService;
+import nl.servicehouse.tesla.register.Register;
+import nl.servicehouse.tesla.register.RegisterService;
 
 @RestController
 @RequestMapping(path = MeteringConstants.METERING_BASE_PATH + "/registers")

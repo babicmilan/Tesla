@@ -1,4 +1,4 @@
-package nl.servicehouse.billingengine.metering.domain;
+package nl.servicehouse.tesla.register;
 
 import java.math.BigDecimal;
 import java.util.Objects;
@@ -15,6 +15,11 @@ import javax.persistence.Table;
 import org.hibernate.envers.Audited;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+
+import nl.servicehouse.tesla.common.AbstractVersionedAuditable;
+import nl.servicehouse.tesla.meter.Meter;
+import nl.servicehouse.tesla.meter.MeteringDirection;
+import nl.servicehouse.tesla.volume.UnitOfMeasure;
 
 @Entity
 @Audited

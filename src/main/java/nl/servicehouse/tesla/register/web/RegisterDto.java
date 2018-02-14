@@ -1,13 +1,13 @@
-package nl.servicehouse.billingengine.metering.dto;
+package nl.servicehouse.tesla.register.web;
 
 import java.math.BigDecimal;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import io.swagger.annotations.ApiModel;
-import nl.servicehouse.billingengine.metering.domain.MeteringDirection;
-import nl.servicehouse.billingengine.metering.domain.TimeFrame;
-import nl.servicehouse.billingengine.metering.domain.UnitOfMeasure;
+import nl.servicehouse.tesla.meter.MeteringDirection;
+import nl.servicehouse.tesla.register.TimeFrame;
+import nl.servicehouse.tesla.volume.UnitOfMeasure;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @ApiModel
