@@ -1,4 +1,4 @@
-package nl.servicehouse.billingengine.metering.domain;
+package nl.servicehouse.tesla.meter;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -22,6 +22,9 @@ import org.hibernate.envers.Audited;
 import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+
+import nl.servicehouse.tesla.accesspoint.AccessPoint;
+import nl.servicehouse.tesla.common.AbstractVersionedAuditable;
 
 @Entity
 @Audited

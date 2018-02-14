@@ -1,7 +1,8 @@
-package nl.servicehouse.billingengine.metering.domain;
+package nl.servicehouse.tesla.meterreading;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+import java.util.Objects;
 
 import javax.persistence.Column;
 import javax.persistence.Convert;
@@ -12,9 +13,11 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
-import java.math.BigDecimal;
-import java.time.LocalDateTime;
-import java.util.Objects;
+
+import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
+import org.springframework.data.jpa.domain.AbstractPersistable;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 @Entity(name = "teslaMeterReading")
 @Table(name = "metering_meterreading")

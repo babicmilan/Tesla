@@ -1,4 +1,4 @@
-package nl.servicehouse.billingengine.metering;
+package nl.servicehouse.tesla.accesspoint;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,7 +12,7 @@ import nl.servicehouse.billingengine.metering.dto.AccessPointDto;
 @Service
 public class AccessPointEventService {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(AccessPointController.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(AccessPointEventService.class);
 
     private final RabbitTemplate rabbitTemplate;
 

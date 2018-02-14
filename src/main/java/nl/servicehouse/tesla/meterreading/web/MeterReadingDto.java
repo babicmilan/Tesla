@@ -1,4 +1,6 @@
-package nl.servicehouse.billingengine.metering.dto;
+package nl.servicehouse.tesla.meterreading.web;
+
+import static nl.servicehouse.tesla.common.MeteringConstants.DATE_PATTERN;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -11,10 +13,9 @@ import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
 import io.swagger.annotations.ApiModel;
 
-import nl.servicehouse.billingengine.metering.domain.TypeOfOrigin;
+import nl.servicehouse.tesla.meterreading.TypeOfOrigin;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import static nl.servicehouse.billingengine.metering.MeteringConstants.DATE_PATTERN;
 
 @ApiModel
 public class MeterReadingDto {

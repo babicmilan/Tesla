@@ -1,4 +1,4 @@
-package nl.servicehouse.billingengine.metering;
+package nl.servicehouse.tesla.accesspoint;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.BeanUtils;

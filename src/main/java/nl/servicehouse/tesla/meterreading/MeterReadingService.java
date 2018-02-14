@@ -1,10 +1,9 @@
-package nl.servicehouse.billingengine.metering;
-
-import nl.servicehouse.billingengine.metering.domain.MeterReading;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
+package nl.servicehouse.tesla.meterreading;
 
 import java.util.Optional;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 public interface MeterReadingService {
 

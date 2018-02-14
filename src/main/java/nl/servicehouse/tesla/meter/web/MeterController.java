@@ -1,17 +1,10 @@
-package nl.servicehouse.billingengine.metering;
+package nl.servicehouse.tesla.meter.web;
 
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiParam;
-import io.swagger.annotations.ApiResponse;
-import io.swagger.annotations.ApiResponses;
-import nl.servicehouse.billingengine.metering.domain.AccessPoint;
-import nl.servicehouse.billingengine.metering.domain.Meter;
-import nl.servicehouse.billingengine.metering.dto.MeterDto;
-import nl.servicehouse.billingengine.metering.exception.DeleteEntityException;
-import nl.servicehouse.billingengine.metering.exception.PersistEntityException;
-import nl.servicehouse.billingengine.metering.exception.ResourceNotFoundException;
-import nl.servicehouse.billingengine.metering.exception.UpdateEntityException;
+import java.util.Optional;
+
+import javax.persistence.TransactionRequiredException;
+import javax.validation.Valid;
+
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,9 +30,20 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import javax.persistence.TransactionRequiredException;
-import javax.validation.Valid;
-import java.util.Optional;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
+import nl.servicehouse.billingengine.metering.exception.DeleteEntityException;
+import nl.servicehouse.billingengine.metering.exception.PersistEntityException;
+import nl.servicehouse.billingengine.metering.exception.ResourceNotFoundException;
+import nl.servicehouse.billingengine.metering.exception.UpdateEntityException;
+import nl.servicehouse.tesla.accesspoint.AccessPoint;
+import nl.servicehouse.tesla.accesspoint.AccessPointService;
+import nl.servicehouse.tesla.common.MeteringConstants;
+import nl.servicehouse.tesla.meter.Meter;
+import nl.servicehouse.tesla.meter.MeterService;
 
 @RestController
 @RequestMapping(path = MeteringConstants.METERING_BASE_PATH + "/meters")

@@ -1,20 +1,19 @@
-package nl.servicehouse.billingengine.metering.dto;
+package nl.servicehouse.tesla.meter.web;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
 import io.swagger.annotations.ApiModel;
-import nl.servicehouse.billingengine.metering.domain.MeterReadingFrequency;
+import nl.servicehouse.tesla.meter.MeterReadingFrequency;
 import nl.servicehouse.billingengine.metering.domain.MeterStatus;
 import nl.servicehouse.billingengine.metering.domain.MeterType;
 import nl.servicehouse.billingengine.metering.domain.MeteringType;
-import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
-import org.springframework.format.annotation.DateTimeFormat;
+import nl.servicehouse.tesla.meter.MeterStatus;
+import nl.servicehouse.tesla.meter.MeterType;
+import nl.servicehouse.tesla.meter.MeteringType;
 
-import javax.persistence.Convert;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -39,7 +38,7 @@ public class MeterDto {
     @JsonSerialize(using = LocalDateSerializer.class)
     private LocalDate deactivationDate;
     private Long accessPointId;
-    private List<RegisterDto> register;
+    private List<nl.servicehouse.billingengine.metering.dto.RegisterDto> register;
 
     public Long getId() {
         return id;

@@ -1,11 +1,10 @@
-package nl.servicehouse.billingengine.metering.consumers;
+package nl.servicehouse.tesla.accesspoint;
 
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import nl.servicehouse.billingengine.metering.AccessPointService;
 import nl.servicehouse.billingengine.metering.config.MeteringAmqpConfig;
 import nl.servicehouse.billingengine.metering.dto.AccessPointDto;
 

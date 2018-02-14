@@ -5,11 +5,13 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
-import nl.servicehouse.billingengine.metering.domain.AccessPoint;
 import nl.servicehouse.billingengine.metering.dto.AccessPointDto;
 import nl.servicehouse.billingengine.metering.exception.PersistEntityException;
 import nl.servicehouse.billingengine.metering.exception.ResourceNotFoundException;
 import nl.servicehouse.billingengine.metering.exception.UpdateEntityException;
+import nl.servicehouse.tesla.accesspoint.AccessPoint;
+import nl.servicehouse.tesla.accesspoint.AccessPointEventService;
+import nl.servicehouse.tesla.accesspoint.AccessPointService;
 import nl.servicehouse.tesla.common.MeteringConstants;
 
 import org.modelmapper.ModelMapper;

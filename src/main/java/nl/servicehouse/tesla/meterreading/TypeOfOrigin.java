@@ -1,4 +1,4 @@
-package nl.servicehouse.billingengine.metering.domain;
+package nl.servicehouse.tesla.meterreading;
 
 public enum TypeOfOrigin {
 

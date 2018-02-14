@@ -1,4 +1,4 @@
-package nl.servicehouse.billingengine.metering;
+package nl.servicehouse.tesla.meterreading.web;
 
 import javax.persistence.TransactionRequiredException;
 import javax.validation.Valid;
@@ -36,6 +36,8 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import nl.servicehouse.billingengine.metering.dto.MeterReadingDto;
 import nl.servicehouse.billingengine.metering.exception.ResourceNotFoundException;
+import nl.servicehouse.tesla.common.MeteringConstants;
+import nl.servicehouse.tesla.meter.web.MeterController;
 
 import java.util.Optional;
 

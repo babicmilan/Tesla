@@ -1,4 +1,4 @@
-package nl.servicehouse.billingengine.metering;
+package nl.servicehouse.tesla.accesspoint;
 
 import nl.servicehouse.billingengine.metering.domain.AccessPoint;
 import nl.servicehouse.billingengine.metering.dto.AccessPointDto;

@@ -1,4 +1,4 @@
-package nl.servicehouse.billingengine.metering.domain;
+package nl.servicehouse.tesla.accesspoint;
 
 import java.util.List;
 
@@ -14,6 +14,7 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import org.hibernate.envers.Audited;
 
+import nl.servicehouse.tesla.common.AbstractVersionedAuditable;
 
 @Entity
 @Audited
