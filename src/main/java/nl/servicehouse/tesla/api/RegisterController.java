@@ -1,4 +1,4 @@
-package nl.servicehouse.tesla.register.web;
+package nl.servicehouse.tesla.api;
 
 import java.util.Optional;
 

@@ -21,7 +21,8 @@ import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 
-import nl.servicehouse.billingengine.metering.domain.Register;
+import nl.servicehouse.tesla.register.Register;
+import nl.servicehouse.tesla.register.RegisterRepository;
 
 @RunWith(MockitoJUnitRunner.class)
 public class VolumeServiceImpTest {

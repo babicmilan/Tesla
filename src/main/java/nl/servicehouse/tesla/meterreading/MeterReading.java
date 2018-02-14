@@ -15,10 +15,10 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
 import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
-import org.springframework.data.jpa.domain.AbstractPersistable;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
+import nl.servicehouse.tesla.common.AbstractPersistable;
 import nl.servicehouse.tesla.register.Register;
 
 @Entity(name = "teslaMeterReading")

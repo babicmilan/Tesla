@@ -21,12 +21,10 @@ import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 
-import nl.servicehouse.billingengine.metering.domain.Meter;
-import nl.servicehouse.billingengine.metering.domain.MeteringDirection;
-import nl.servicehouse.billingengine.metering.domain.Register;
-import nl.servicehouse.billingengine.metering.domain.TimeFrame;
-import nl.servicehouse.billingengine.metering.domain.UnitOfMeasure;
+import nl.servicehouse.tesla.meter.Meter;
 import nl.servicehouse.tesla.meter.MeterRepository;
+import nl.servicehouse.tesla.meter.MeteringDirection;
+import nl.servicehouse.tesla.volume.UnitOfMeasure;
 
 @RunWith(MockitoJUnitRunner.class)
 public class RegisterServiceImplTest {

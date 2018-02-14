@@ -1,4 +1,4 @@
-package nl.servicehouse.tesla.accesspoint.web;
+package nl.servicehouse.tesla.api;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

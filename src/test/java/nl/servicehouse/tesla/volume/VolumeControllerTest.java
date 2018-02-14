@@ -36,8 +36,10 @@ import com.fasterxml.jackson.datatype.jsr310.JSR310Module;
 
 import nl.servicehouse.billingengine.api.pub.registration.DatabindingControllerAdvice;
 import nl.servicehouse.billingengine.api.pub.registration.ExceptionControllerAdvice;
-import nl.servicehouse.billingengine.metering.domain.Register;
+import nl.servicehouse.tesla.api.VolumeController;
 import nl.servicehouse.tesla.common.MeteringConstants;
+import nl.servicehouse.tesla.register.Register;
+import nl.servicehouse.tesla.register.RegisterService;
 
 @RunWith(MockitoJUnitRunner.class)
 public class VolumeControllerTest {
@@ -50,13 +52,13 @@ public class VolumeControllerTest {
     private static final LocalDateTime END_TIMESTAMP = LocalDateTime.of(2018,12,1,14,23,55);
     
     @Mock
-    private nl.servicehouse.billingengine.metering.RegisterService registerService;
+    private RegisterService registerService;
     @Mock
     private VolumeService volumeService;
 
     @Before
     public void before() {
-        this.mockMvc = MockMvcBuilders.standaloneSetup(new nl.servicehouse.billingengine.metering.VolumeController(volumeService, registerService, modelMapper))
+        this.mockMvc = MockMvcBuilders.standaloneSetup(new VolumeController(volumeService, registerService, modelMapper))
                 .setControllerAdvice(new DatabindingControllerAdvice(), new ExceptionControllerAdvice())
                 .setCustomArgumentResolvers(new PageableHandlerMethodArgumentResolver())
                 .build();

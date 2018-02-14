@@ -1,4 +1,4 @@
-package nl.servicehouse.tesla.meterreading.web;
+package nl.servicehouse.tesla.api;
 
 import javax.persistence.TransactionRequiredException;
 import javax.validation.Valid;
@@ -33,7 +33,6 @@ import nl.servicehouse.tesla.exception.DeleteEntityException;
 import nl.servicehouse.tesla.exception.PersistEntityException;
 import nl.servicehouse.tesla.exception.ResourceNotFoundException;
 import nl.servicehouse.tesla.exception.UpdateEntityException;
-import nl.servicehouse.tesla.meter.web.MeterController;
 import nl.servicehouse.tesla.meterreading.MeterReading;
 import nl.servicehouse.tesla.meterreading.MeterReadingService;
 import nl.servicehouse.tesla.register.Register;

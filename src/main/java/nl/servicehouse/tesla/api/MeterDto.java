@@ -1,4 +1,4 @@
-package nl.servicehouse.tesla.meter.web;
+package nl.servicehouse.tesla.api;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
@@ -10,7 +10,6 @@ import nl.servicehouse.tesla.meter.MeterReadingFrequency;
 import nl.servicehouse.tesla.meter.MeterStatus;
 import nl.servicehouse.tesla.meter.MeterType;
 import nl.servicehouse.tesla.meter.MeteringType;
-import nl.servicehouse.tesla.register.web.RegisterDto;
 
 import java.time.LocalDate;
 import java.util.List;

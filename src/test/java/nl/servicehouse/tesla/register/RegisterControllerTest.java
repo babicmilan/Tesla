@@ -33,13 +33,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import nl.servicehouse.billingengine.api.pub.registration.DatabindingControllerAdvice;
 import nl.servicehouse.billingengine.api.pub.registration.ExceptionControllerAdvice;
-import nl.servicehouse.billingengine.metering.domain.Meter;
-import nl.servicehouse.billingengine.metering.domain.MeteringDirection;
-import nl.servicehouse.billingengine.metering.domain.Register;
-import nl.servicehouse.billingengine.metering.domain.TimeFrame;
-import nl.servicehouse.billingengine.metering.domain.UnitOfMeasure;
+import nl.servicehouse.tesla.api.RegisterController;
 import nl.servicehouse.tesla.common.MeteringConstants;
+import nl.servicehouse.tesla.meter.Meter;
 import nl.servicehouse.tesla.meter.MeterService;
+import nl.servicehouse.tesla.meter.MeteringDirection;
+import nl.servicehouse.tesla.volume.UnitOfMeasure;
 
 @RunWith(MockitoJUnitRunner.class)
 public class RegisterControllerTest {

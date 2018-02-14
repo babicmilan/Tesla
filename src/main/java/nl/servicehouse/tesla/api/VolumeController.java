@@ -1,4 +1,4 @@
-package nl.servicehouse.tesla.volume.web;
+package nl.servicehouse.tesla.api;
 
 import java.util.Optional;
 

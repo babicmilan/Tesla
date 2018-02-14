@@ -1,4 +1,4 @@
-package nl.servicehouse.tesla.volume.web;
+package nl.servicehouse.tesla.api;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import io.swagger.annotations.ApiModel;

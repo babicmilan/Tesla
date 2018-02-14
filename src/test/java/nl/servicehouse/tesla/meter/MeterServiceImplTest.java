@@ -1,11 +1,14 @@
 package nl.servicehouse.tesla.meter;
 
-import nl.servicehouse.billingengine.metering.domain.AccessPoint;
-import nl.servicehouse.billingengine.metering.domain.Meter;
-import nl.servicehouse.billingengine.metering.domain.MeterReadingFrequency;
-import nl.servicehouse.billingengine.metering.domain.MeterStatus;
-import nl.servicehouse.billingengine.metering.domain.MeterType;
-import nl.servicehouse.billingengine.metering.domain.MeteringType;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.anyLong;
+import static org.mockito.Mockito.when;
+
+import java.time.LocalDate;
+import java.util.Arrays;
+import java.util.Optional;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,14 +20,7 @@ import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 
-import java.time.LocalDate;
-import java.util.Arrays;
-import java.util.Optional;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.Mockito.any;
-import static org.mockito.Mockito.anyLong;
-import static org.mockito.Mockito.when;
+import nl.servicehouse.tesla.accesspoint.AccessPoint;
 
 @RunWith(MockitoJUnitRunner.class)
 public class MeterServiceImplTest {

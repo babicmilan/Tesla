@@ -1,4 +1,4 @@
-package nl.servicehouse.tesla.meterreading.web;
+package nl.servicehouse.tesla.api;
 
 import static nl.servicehouse.tesla.common.MeteringConstants.DATE_PATTERN;
 

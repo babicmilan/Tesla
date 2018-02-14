@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import nl.servicehouse.tesla.meter.MeterRepository;
-import nl.servicehouse.tesla.register.web.RegisterDto;
+import nl.servicehouse.tesla.api.RegisterDto;
 
 @Service
 @Transactional

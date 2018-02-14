@@ -1,4 +1,4 @@
-package nl.servicehouse.tesla.accesspoint.web;
+package nl.servicehouse.tesla.api;
 
 import java.util.List;
 
@@ -6,7 +6,6 @@ import io.swagger.annotations.ApiModel;
 import nl.servicehouse.tesla.accesspoint.AccessPointStatus;
 import nl.servicehouse.tesla.accesspoint.Calendar;
 import nl.servicehouse.tesla.accesspoint.Commodity;
-import nl.servicehouse.tesla.meter.web.MeterDto;
 
 @ApiModel
 public class AccessPointDto {

@@ -1,4 +1,4 @@
-package nl.servicehouse.tesla.meter.web;
+package nl.servicehouse.tesla.api;
 
 import java.util.Optional;
 

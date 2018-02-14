@@ -36,8 +36,10 @@ import com.fasterxml.jackson.datatype.jsr310.JSR310Module;
 
 import nl.servicehouse.billingengine.api.pub.registration.DatabindingControllerAdvice;
 import nl.servicehouse.billingengine.api.pub.registration.ExceptionControllerAdvice;
-import nl.servicehouse.billingengine.metering.domain.AccessPoint;
+import nl.servicehouse.tesla.accesspoint.AccessPoint;
 import nl.servicehouse.tesla.accesspoint.AccessPointService;
+import nl.servicehouse.tesla.api.MeterController;
+import nl.servicehouse.tesla.common.MeteringConstants;
 
 @RunWith(MockitoJUnitRunner.class)
 public class MeterControllerTest {

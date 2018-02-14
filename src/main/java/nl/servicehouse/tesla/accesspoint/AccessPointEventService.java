@@ -6,7 +6,7 @@ import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import nl.servicehouse.tesla.accesspoint.web.AccessPointDto;
+import nl.servicehouse.tesla.api.AccessPointDto;
 import nl.servicehouse.tesla.config.MeteringAmqpConfig;
 
 @Service

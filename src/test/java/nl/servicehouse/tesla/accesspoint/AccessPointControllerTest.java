@@ -33,7 +33,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import nl.servicehouse.billingengine.api.pub.registration.DatabindingControllerAdvice;
 import nl.servicehouse.billingengine.api.pub.registration.ExceptionControllerAdvice;
-import nl.servicehouse.tesla.accesspoint.web.AccessPointController;
+import nl.servicehouse.tesla.api.AccessPointController;
 import nl.servicehouse.tesla.common.MeteringConstants;
 
 @RunWith(MockitoJUnitRunner.class)

@@ -36,9 +36,10 @@ import com.fasterxml.jackson.datatype.jsr310.JSR310Module;
 
 import nl.servicehouse.billingengine.api.pub.registration.DatabindingControllerAdvice;
 import nl.servicehouse.billingengine.api.pub.registration.ExceptionControllerAdvice;
-import nl.servicehouse.billingengine.metering.domain.Register;
+import nl.servicehouse.tesla.api.MeterReadingController;
 import nl.servicehouse.tesla.common.MeteringConstants;
-import nl.servicehouse.tesla.meterreading.web.MeterReadingController;
+import nl.servicehouse.tesla.register.Register;
+import nl.servicehouse.tesla.register.RegisterService;
 
 @RunWith(MockitoJUnitRunner.class)
 public class MeterReadingControllerTest {
