@@ -1,4 +1,4 @@
-package nl.servicehouse.billingengine.metering;
+package nl.servicehouse.tesla.accesspoint.web;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -10,6 +10,8 @@ import nl.servicehouse.billingengine.metering.dto.AccessPointDto;
 import nl.servicehouse.billingengine.metering.exception.PersistEntityException;
 import nl.servicehouse.billingengine.metering.exception.ResourceNotFoundException;
 import nl.servicehouse.billingengine.metering.exception.UpdateEntityException;
+import nl.servicehouse.tesla.common.MeteringConstants;
+
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
