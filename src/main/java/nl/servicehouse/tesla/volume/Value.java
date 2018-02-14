@@ -1,4 +1,4 @@
-package nl.servicehouse.billingengine.metering.domain;
+package nl.servicehouse.tesla.volume;
 
 import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 
