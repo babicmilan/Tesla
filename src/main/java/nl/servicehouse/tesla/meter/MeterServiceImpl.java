@@ -1,8 +1,5 @@
 package nl.servicehouse.tesla.meter;
 
-import nl.servicehouse.billingengine.metering.domain.Meter;
-import nl.servicehouse.billingengine.metering.dto.MeterDto;
-import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;

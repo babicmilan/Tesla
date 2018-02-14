@@ -10,6 +10,7 @@ import nl.servicehouse.tesla.meter.MeterReadingFrequency;
 import nl.servicehouse.tesla.meter.MeterStatus;
 import nl.servicehouse.tesla.meter.MeterType;
 import nl.servicehouse.tesla.meter.MeteringType;
+import nl.servicehouse.tesla.register.web.RegisterDto;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -35,7 +36,7 @@ public class MeterDto {
     @JsonSerialize(using = LocalDateSerializer.class)
     private LocalDate deactivationDate;
     private Long accessPointId;
-    private List<nl.servicehouse.billingengine.metering.dto.RegisterDto> register;
+    private List<RegisterDto> register;
 
     public Long getId() {
         return id;

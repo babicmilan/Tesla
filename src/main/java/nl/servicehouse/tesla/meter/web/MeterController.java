@@ -35,13 +35,13 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
-import nl.servicehouse.billingengine.metering.exception.DeleteEntityException;
-import nl.servicehouse.billingengine.metering.exception.PersistEntityException;
-import nl.servicehouse.billingengine.metering.exception.ResourceNotFoundException;
-import nl.servicehouse.billingengine.metering.exception.UpdateEntityException;
 import nl.servicehouse.tesla.accesspoint.AccessPoint;
 import nl.servicehouse.tesla.accesspoint.AccessPointService;
 import nl.servicehouse.tesla.common.MeteringConstants;
+import nl.servicehouse.tesla.exception.DeleteEntityException;
+import nl.servicehouse.tesla.exception.PersistEntityException;
+import nl.servicehouse.tesla.exception.ResourceNotFoundException;
+import nl.servicehouse.tesla.exception.UpdateEntityException;
 import nl.servicehouse.tesla.meter.Meter;
 import nl.servicehouse.tesla.meter.MeterService;
 

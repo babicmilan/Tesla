@@ -25,6 +25,7 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import nl.servicehouse.tesla.accesspoint.AccessPoint;
 import nl.servicehouse.tesla.common.AbstractVersionedAuditable;
+import nl.servicehouse.tesla.register.Register;
 
 @Entity
 @Audited

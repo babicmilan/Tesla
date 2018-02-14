@@ -1,10 +1,8 @@
 package nl.servicehouse.tesla.meter;
 
-import org.joda.time.DateTime;
-
-import nl.servicehouse.billingengine.model.AbstractPersistable;
-
 import javax.persistence.Embeddable;
+
+import java.time.LocalDate;
 import java.util.Objects;
 
 /**
@@ -24,9 +22,9 @@ public final class MeteringOrder {
      */
     private final String orderIdentifier;
 
-    private final DateTime orderTimestamp;
+    private final LocalDate orderTimestamp;
 
-    public MeteringOrder(final String orderIdentifier, final DateTime orderTimestamp) {
+    public MeteringOrder(final String orderIdentifier, final LocalDate orderTimestamp) {
         this.orderIdentifier = orderIdentifier;
         this.orderTimestamp = orderTimestamp;
     }
@@ -50,7 +48,7 @@ public final class MeteringOrder {
         return orderIdentifier;
     }
 
-    public DateTime getOrderTimestamp() {
+    public LocalDate getOrderTimestamp() {
         return orderTimestamp;
     }
 }

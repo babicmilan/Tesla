@@ -6,8 +6,8 @@ import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import nl.servicehouse.billingengine.metering.config.MeteringAmqpConfig;
-import nl.servicehouse.billingengine.metering.dto.AccessPointDto;
+import nl.servicehouse.tesla.accesspoint.web.AccessPointDto;
+import nl.servicehouse.tesla.config.MeteringAmqpConfig;
 
 @Service
 public class AccessPointEventService {

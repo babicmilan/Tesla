@@ -1,7 +1,5 @@
 package nl.servicehouse.tesla.accesspoint;
 
-import nl.servicehouse.billingengine.metering.domain.AccessPoint;
-import nl.servicehouse.billingengine.metering.dto.AccessPointDto;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

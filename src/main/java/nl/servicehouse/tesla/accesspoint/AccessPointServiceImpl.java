@@ -1,15 +1,10 @@
 package nl.servicehouse.tesla.accesspoint;
 
-import org.modelmapper.ModelMapper;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-
-import nl.servicehouse.billingengine.metering.domain.AccessPoint;
-import nl.servicehouse.billingengine.metering.dto.AccessPointDto;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 

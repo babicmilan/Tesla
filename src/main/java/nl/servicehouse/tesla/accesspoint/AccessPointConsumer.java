@@ -5,8 +5,8 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import nl.servicehouse.billingengine.metering.config.MeteringAmqpConfig;
-import nl.servicehouse.billingengine.metering.dto.AccessPointDto;
+import nl.servicehouse.tesla.accesspoint.web.AccessPointDto;
+import nl.servicehouse.tesla.config.MeteringAmqpConfig;
 
 @Component
 @RabbitListener(queues = MeteringAmqpConfig.ACCESS_POINT_QUEUE, containerFactory = MeteringAmqpConfig.RABBIT_LISTENER_CONTAINER_BEAN_NAME)

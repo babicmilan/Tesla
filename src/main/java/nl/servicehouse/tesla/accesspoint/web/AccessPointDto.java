@@ -1,11 +1,12 @@
-package nl.servicehouse.billingengine.metering.dto;
+package nl.servicehouse.tesla.accesspoint.web;
 
 import java.util.List;
 
 import io.swagger.annotations.ApiModel;
-import nl.servicehouse.billingengine.metering.domain.AccessPointStatus;
-import nl.servicehouse.billingengine.metering.domain.Calendar;
-import nl.servicehouse.billingengine.metering.domain.Commodity;
+import nl.servicehouse.tesla.accesspoint.AccessPointStatus;
+import nl.servicehouse.tesla.accesspoint.Calendar;
+import nl.servicehouse.tesla.accesspoint.Commodity;
+import nl.servicehouse.tesla.meter.web.MeterDto;
 
 @ApiModel
 public class AccessPointDto {
