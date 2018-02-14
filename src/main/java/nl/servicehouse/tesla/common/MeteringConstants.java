@@ -1,4 +1,4 @@
-package nl.servicehouse.billingengine.metering;
+package nl.servicehouse.tesla.common;
 
 public class MeteringConstants {
 
