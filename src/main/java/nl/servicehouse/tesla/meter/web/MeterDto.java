@@ -7,9 +7,6 @@ import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
 import io.swagger.annotations.ApiModel;
 import nl.servicehouse.tesla.meter.MeterReadingFrequency;
-import nl.servicehouse.billingengine.metering.domain.MeterStatus;
-import nl.servicehouse.billingengine.metering.domain.MeterType;
-import nl.servicehouse.billingengine.metering.domain.MeteringType;
 import nl.servicehouse.tesla.meter.MeterStatus;
 import nl.servicehouse.tesla.meter.MeterType;
 import nl.servicehouse.tesla.meter.MeteringType;
@@ -17,7 +14,7 @@ import nl.servicehouse.tesla.meter.MeteringType;
 import java.time.LocalDate;
 import java.util.List;
 
-import static nl.servicehouse.billingengine.metering.MeteringConstants.DATE_PATTERN;
+
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @ApiModel

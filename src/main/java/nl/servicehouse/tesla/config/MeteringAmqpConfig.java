@@ -1,4 +1,4 @@
-package nl.servicehouse.billingengine.metering.config;
+package nl.servicehouse.tesla.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

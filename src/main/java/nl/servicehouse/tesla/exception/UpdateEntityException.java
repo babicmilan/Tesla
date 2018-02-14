@@ -1,7 +1,4 @@
-/**
- *
- */
-package nl.servicehouse.billingengine.metering.exception;
+package nl.servicehouse.tesla.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

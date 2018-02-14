@@ -1,4 +1,4 @@
-package nl.servicehouse.billingengine.metering.config;
+package nl.servicehouse.tesla.config;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
