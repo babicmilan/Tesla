@@ -34,11 +34,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JSR310Module;
 
-import nl.servicehouse.billingengine.api.pub.registration.DatabindingControllerAdvice;
-import nl.servicehouse.billingengine.api.pub.registration.ExceptionControllerAdvice;
 import nl.servicehouse.tesla.accesspoint.AccessPoint;
 import nl.servicehouse.tesla.accesspoint.AccessPointService;
 import nl.servicehouse.tesla.api.MeterController;
+import nl.servicehouse.tesla.common.DatabindingControllerAdvice;
+import nl.servicehouse.tesla.common.ExceptionControllerAdvice;
 import nl.servicehouse.tesla.common.MeteringConstants;
 
 @RunWith(MockitoJUnitRunner.class)

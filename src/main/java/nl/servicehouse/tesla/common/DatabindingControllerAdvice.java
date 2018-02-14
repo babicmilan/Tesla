@@ -1,10 +1,10 @@
-package nl.servicehouse.billingengine.api.pub.registration;
+package nl.servicehouse.tesla.common;
 
 import org.springframework.validation.DataBinder;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.InitBinder;
 
-@ControllerAdvice("nl.servicehouse.billingengine.api.pub.registration")
+@ControllerAdvice("nl.servicehouse.tesla.common")
 public class DatabindingControllerAdvice {
 
     @InitBinder

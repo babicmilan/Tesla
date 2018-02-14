@@ -34,9 +34,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JSR310Module;
 
-import nl.servicehouse.billingengine.api.pub.registration.DatabindingControllerAdvice;
-import nl.servicehouse.billingengine.api.pub.registration.ExceptionControllerAdvice;
 import nl.servicehouse.tesla.api.MeterReadingController;
+import nl.servicehouse.tesla.common.DatabindingControllerAdvice;
+import nl.servicehouse.tesla.common.ExceptionControllerAdvice;
 import nl.servicehouse.tesla.common.MeteringConstants;
 import nl.servicehouse.tesla.register.Register;
 import nl.servicehouse.tesla.register.RegisterService;

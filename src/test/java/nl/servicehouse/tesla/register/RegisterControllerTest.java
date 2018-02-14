@@ -31,9 +31,9 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import nl.servicehouse.billingengine.api.pub.registration.DatabindingControllerAdvice;
-import nl.servicehouse.billingengine.api.pub.registration.ExceptionControllerAdvice;
 import nl.servicehouse.tesla.api.RegisterController;
+import nl.servicehouse.tesla.common.DatabindingControllerAdvice;
+import nl.servicehouse.tesla.common.ExceptionControllerAdvice;
 import nl.servicehouse.tesla.common.MeteringConstants;
 import nl.servicehouse.tesla.meter.Meter;
 import nl.servicehouse.tesla.meter.MeterService;
