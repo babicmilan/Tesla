@@ -3,5 +3,5 @@
    | |/ -_)(_-<| |/ _` |
    |_|\___|/__/|_|\__,_|
 
- Service${AnsiColor.RED}House${AnsiColor.DEFAULT} BE ${application.version}
+ Service${AnsiColor.RED}House${AnsiColor.DEFAULT} ${application.version}
  Running on Spring Boot ${spring-boot.version}

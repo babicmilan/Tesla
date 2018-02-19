@@ -16,4 +16,8 @@ spring:
     username: guest
     password: guest
 
+flyway:
+  enabled: true
+  locations: classpath:migration
+
 ...
